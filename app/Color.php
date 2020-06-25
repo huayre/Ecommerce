@@ -8,5 +8,7 @@ class Color extends Model
 {
     protected $fillable=['name','article_id'];
 
-
+  public function photos(){
+      return $this->hasMany(Photo::class);
+  }
 }

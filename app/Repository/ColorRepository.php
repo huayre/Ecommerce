@@ -11,7 +11,7 @@ class ColorRepository implements BaseRepository
 {
     public function all()
     {
-        return Color::all();
+        return Color::with('photos')->get();
     }
 
     public function create($data)
