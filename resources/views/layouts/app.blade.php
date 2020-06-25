@@ -8,7 +8,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>TOXVIV | Login</title>
-    <link rel="stylesheet" href="{{secure_asset('bootstrap4.5/bootstrap.min.css')}}" >
+    <!--Bootstrap v4.5-->
+    <link rel="stylesheet" href="{{secure_asset('bootstrap4.5/css/bootstrap.min.css')}}" >
 
 
 </head>
