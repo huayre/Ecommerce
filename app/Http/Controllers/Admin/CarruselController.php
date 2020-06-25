@@ -23,7 +23,7 @@ class CarruselController extends Controller
     public function index()
     {
      $ListCarrusel=$this->CarruselRespository->all();
-     return view('App.admin.carrusel.index',compact('ListCarrusel'));
+     return view('App.Admin.carrusel.index',compact('ListCarrusel'));
     }
 
     /**
