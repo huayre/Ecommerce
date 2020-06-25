@@ -26,17 +26,20 @@ Route::get('listsubcategorie{id}','Frond\ListController@getListArticleSubcategor
 
 
 
+
 //Admin
-Route::get('home','Admin\HomeAdminController@index')->name('home');
-Route::resource('category','Admin\CategoryController');
-Route::resource('subcategory','Admin\SubCategoryController');
-Route::resource('article','Admin\ArticleController');
-Route::get('colors{id_article}','Admin\ColorController@index')->name('colorindex');
-Route::delete('deletecolor{color_id}{article_id}','Admin\ColorController@destroy')->name('colordestroy');
-Route::resource('color','Admin\ColorController');
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('home','Admin\HomeAdminController@index')->name('home');
+    Route::resource('category','Admin\CategoryController');
+    Route::resource('subcategory','Admin\SubCategoryController');
+    Route::resource('article','Admin\ArticleController');
+    Route::get('colors{id_article}','Admin\ColorController@index')->name('colorindex');
+    Route::delete('deletecolor{color_id}{article_id}','Admin\ColorController@destroy')->name('colordestroy');
+    Route::resource('color','Admin\ColorController');
 //photos
-Route::resource('photo','Admin\PhotoController');
-Route::delete('deletephoto{photo_id}{article_id}','Admin\PhotoController@destroy')->name('photodestroy');
+    Route::resource('photo','Admin\PhotoController');
+    Route::delete('deletephoto{photo_id}{article_id}','Admin\PhotoController@destroy')->name('photodestroy');
 
 //carrusel
-Route::resource('carrusel','Admin\CarruselController');
+    Route::resource('carrusel','Admin\CarruselController');
+});
