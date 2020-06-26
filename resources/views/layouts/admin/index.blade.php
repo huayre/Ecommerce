@@ -12,31 +12,31 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
     <!-- iCheck -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <!-- JQVMap -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/jqvmap/jqvmap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/jqvmap/jqvmap.min.css')}}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/dist/css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/dist/css/adminlte.min.css')}}">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/daterangepicker/daterangepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/daterangepicker/daterangepicker.css')}}">
     <!-- summernote -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/summernote/summernote-bs4.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!--Bootstrap v4.5-->
-    <link rel="stylesheet" href="{{secure_asset('bootstrap4.5/css/bootstrap.min.css')}}" >
+    <link rel="stylesheet" href="{{asset('bootstrap4.5/css/bootstrap.min.css')}}" >
     <!--packege toastr-->
     @toastr_css
     <!-- DataTables -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/datatables-bs4/css/dataTables.bootstrap4.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/datatables-bs4/css/dataTables.bootstrap4.css')}}">
     <!-- bootstrap-select -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <!-- Ekko Lightbox -->
-    <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/ekko-lightbox/ekko-lightbox.css')}}">
+    <link rel="stylesheet" href="{{asset('template_admin/plugins/ekko-lightbox/ekko-lightbox.css')}}">
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -209,52 +209,52 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="{{secure_asset('template_admin/plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/jquery/jquery.min.js')}}"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="{{secure_asset('template_admin/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
     $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="{{secure_asset('template_admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- ChartJS -->
-<script src="{{secure_asset('template_admin/plugins/chart.js/Chart.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/chart.js/Chart.min.js')}}"></script>
 <!-- Sparkline -->
-<script src="{{secure_asset('template_admin/plugins/sparklines/sparkline.js')}}"></script>
+<script src="{{asset('template_admin/plugins/sparklines/sparkline.js')}}"></script>
 <!-- JQVMap -->
-<script src="{{secure_asset('template_admin/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
-<script src="{{secure_asset('template_admin/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
+<script src="{{asset('template_admin/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
 <!-- jQuery Knob Chart -->
-<script src="{{secure_asset('template_admin/plugins/jquery-knob/jquery.knob.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/jquery-knob/jquery.knob.min.js')}}"></script>
 <!-- daterangepicker -->
-<script src="{{secure_asset('template_admin/plugins/moment/moment.min.js')}}"></script>
-<script src="{{secure_asset('template_admin/plugins/daterangepicker/daterangepicker.js')}}"></script>
+<script src="{{asset('template_admin/plugins/moment/moment.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/daterangepicker/daterangepicker.js')}}"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="{{secure_asset('template_admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 <!-- Summernote -->
-<script src="{{secure_asset('template_admin/plugins/summernote/summernote-bs4.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/summernote/summernote-bs4.min.js')}}"></script>
 <!-- overlayScrollbars -->
-<script src="{{secure_asset('template_admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{secure_asset('template_admin/dist/js/adminlte.js')}}"></script>
+<script src="{{asset('template_admin/dist/js/adminlte.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 {{--<script src="{{asset('template_admin/dist/js/pages/dashboard.js')}}"></script>--}}
-<script src="{{secure_asset('template_admin/dist/js/demo.js')}}"></script>
+<script src="{{asset('template_admin/dist/js/demo.js')}}"></script>
 <!--package toastr-->
 @toastr_js
 @toastr_render
 <!-- DataTables -->
-<script src="{{secure_asset('template_admin/plugins/datatables/jquery.dataTables.js')}}"></script>
-<script src="{{secure_asset('template_admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
-<script src="{{secure_asset('js/data_table_config.js')}}"></script>
+<script src="{{asset('template_admin/plugins/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{asset('template_admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
+<script src="{{asset('js/data_table_config.js')}}"></script>
 <!-- Select2 -->
-<script src="{{secure_asset('template_admin/plugins/select2/js/select2.full.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/select2/js/select2.full.min.js')}}"></script>
 <!-- bootstrap-select -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
 <!-- Ekko Lightbox -->
-<script src="{{secure_asset('template_admin/plugins/ekko-lightbox/ekko-lightbox.min.js')}}"></script>
+<script src="{{asset('template_admin/plugins/ekko-lightbox/ekko-lightbox.min.js')}}"></script>
 
 @yield('script')
 </body>
