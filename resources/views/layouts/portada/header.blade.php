@@ -8,7 +8,7 @@
         </div>
         <div>
              <a href="{{route('inicio')}}">
-                 <img src="{{secure_asset('logov2.png')}}" width="150px">
+                 <img src="{{asset('logov2.png')}}" width="150px">
              </a>
         </div>
     </div>

@@ -1,27 +1,15 @@
-<style>
-    .carousel-item{
-        display: block;
-        width: 100%;
-        height: 200px;
-    }
-    .carousel-item img {
-        height: 100%;
-        width: 100%;
-    }
-</style>
 <div>
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner"  style="height: 450px" >
+        <ol class="carousel-indicators" >
             @foreach($ListCarrusel as $car)
-                @if($loop->index==0)
-                    <div class="carousel-item active" data-interval="2000">
-                        <img src="{{$car->url}}" class="d-block img-fluid  w-100" alt="...">
-                    </div>
-                @else
-                    <div class="carousel-item" data-interval="2000">
-                        <img src="{{$car->url}}" class="d-block img-fluid  w-100" alt="...">
-                    </div>
-                @endif
+                <li data-target="#carouselExampleInterval" data-slide-to="{{$loop->index}}" class="@if($loop->index==0) active @endif"></li>
+            @endforeach
+        </ol>
+        <div class="carousel-inner">
+            @foreach($ListCarrusel as $car)
+                <div class="carousel-item @if($loop->index==0) active @endif" data-interval="2000">
+                    <img src="{{$car->url}}" class="w-100" alt="..." style="height: 500px">
+                </div>
             @endforeach
         </div>
 
