@@ -1,3 +1,14 @@
+<style>
+    .carousel-item{
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    .carousel-item img {
+        height: 100%;
+        width: 100%;
+    }
+</style>
 <div>
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner"  style="height: 450px" >

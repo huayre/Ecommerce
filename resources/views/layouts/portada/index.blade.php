@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{secure_asset('bootstrap4.5/css/bootstrap.min.css')}}" >
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{secure_asset('template_admin/plugins/fontawesome-free/css/all.min.css')}}">
-    <link rel="stylesheet" href="{{secure_asset('css/frond.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/frond.css')}}" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 
 </head>
