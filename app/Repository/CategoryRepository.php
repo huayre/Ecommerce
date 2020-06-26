@@ -38,6 +38,8 @@ class CategoryRepository implements BaseRepository
     }
     //metodos adicionales
     public  static function CategoriesActives(){
-        return Category::with('subcategories')->where('state','1')->get();
+        return Category::with(['subcategories'=>function($query){
+            $query->where('state','1');
+        }])->where('state','1')->get();
     }
 }

@@ -8,7 +8,7 @@ use App\Carrusel;
 
 class CarruselRepository implements BaseRepository
 {
-    public function all()
+    public  function  all()
     {
         return Carrusel::all();
     }
@@ -33,6 +33,10 @@ class CarruselRepository implements BaseRepository
     public function find($id)
     {
         return Carrusel::find($id);
+    }
+
+    public static function ListaCarrusel(){
+        return Carrusel::all();
     }
 
 

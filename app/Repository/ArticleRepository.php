@@ -13,7 +13,7 @@ class ArticleRepository
 {
     public function all()
     {
-        return Article::with('subcategorie')->paginate(100);
+        return Article::with('subcategorie')->get();
     }
 
     public function create($data)
