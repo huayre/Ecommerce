@@ -6,7 +6,11 @@
     display:none;
 }
 #tamaño{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 100px;
+    font-family: 'Merienda', cursive;
+}
+#textnacional{
+    font-family: 'Damion', cursive;
+    font-size: 38px;
+    color: #1fc8e3;
 }
 
