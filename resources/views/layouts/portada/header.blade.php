@@ -3,7 +3,12 @@
 
     li:hover {
         border-bottom: 3px solid yellow;
-       
+
+    }
+    #textnacional{
+        font-family: 'Damion', cursive;
+        font-size: 38px;
+        color:#B71C1C;
     }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
