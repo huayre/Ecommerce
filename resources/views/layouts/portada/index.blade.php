@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/frond.css')}}">
 
     <title>Hello, world!</title>
+    @yield('styles')
 </head>
 <body style="background:#FCF3CF">
 <div >

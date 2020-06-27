@@ -20,7 +20,7 @@ Route::get('logout',function(){
 })->name('logout');
 
 
-//fronend
+//frontend
 Route::get('/','HomeController@index')->name('inicio');
 Route::get('listsubcategorie{id}','Frond\ListController@getListArticleSubcategorie')->name('listsubcategorie');
 
