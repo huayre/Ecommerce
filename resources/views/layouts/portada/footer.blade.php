@@ -1,9 +1,14 @@
 <footer>
-    <div style="background: yellow">
+    <div >
 
     </div>
-    <div>
-
+    <div class="bg-warning d-flex justify-content-center p-5">
+        <form class="form">
+            <div class="form-inline">
+                <label for="staticEmail2" class="mr-2">SUSCRÍBETE, ENTÉRATE DE LAS NOVEDADES</label>
+                <input type="email" class="form-control" placeholder="email@example.com">
+            </div>
+        </form>
     </div>
     <div class="row  p-5">
         <div class="col-12 col-sm-12 col-md-3">

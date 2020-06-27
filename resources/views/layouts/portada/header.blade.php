@@ -1,8 +1,8 @@
 <style>
     .navbar-dropdown a:hover { background:yellow; }
 
-    li:hover {
-        border-bottom: 3px solid yellow;
+    .navbar-nav li:hover {
+        border-bottom:  solid yellow;
 
     }
     #textnacional{
