@@ -20,6 +20,7 @@
     <div>
         @yield('contenido')
     </div>
+    @include('layouts.portada.footer')
 </div>
 
 <!-- Optional JavaScript -->

@@ -8,7 +8,6 @@ use App\Repository\ArticleRepository;
 class ListController extends Controller
 {
     private $ArticleRepository;
-    private $CategoryRepository;
     public function __construct(ArticleRepository $ArticleRepository)
     {
         $this->ArticleRepository=$ArticleRepository;

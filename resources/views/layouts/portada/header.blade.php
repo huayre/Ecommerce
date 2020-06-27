@@ -13,20 +13,23 @@
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <div class="p-3 row " style="background:#f4fb39">
-        <div class="col" >
-             <a href="{{route('inicio')}}">
-                 <img src="{{asset('logov2.png')}}" width="150px" class="ml-3">
-             </a>
-        </div>
-        <div class="col">
-            <h3 id="textnacional" class="text-center">Envios A Nivel Nacional</h3>
-        </div>
-        <div class="col d-flex justify-content-end">
-            <a href="https://www.facebook.com/toxvic/?modal=admin_todo_tour" target="_blank"><i class=" fab fa-facebook mx-2" style="color:#3b5998"></i></a>
-            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class=" fab fa-instagram" style="color:#B71C1C" ></i></a>
+    <div class="d-none d-md-block">
+        <div class="p-3 row  " style="background:#f4fb39">
+            <div class="col" >
+                <a href="{{route('inicio')}}">
+                    <img src="{{asset('logov2.png')}}" width="150px" class="ml-3">
+                </a>
+            </div>
+            <div class="col">
+                <h3 id="textnacional" class="text-center">Envios A Nivel Nacional</h3>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a href="https://www.facebook.com/toxvic/?modal=admin_todo_tour" target="_blank"><i class=" fab fa-facebook mx-2" style="color:#3b5998"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class=" fab fa-instagram" style="color:#B71C1C" ></i></a>
+            </div>
         </div>
     </div>
+
 
 
     <nav class="navbar  sticky-top navbar-expand-lg navbar-light bg-dark">

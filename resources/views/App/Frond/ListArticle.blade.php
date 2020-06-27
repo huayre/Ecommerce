@@ -1,6 +1,9 @@
 @extends('layouts.portada.index')
 @section('contenido')
 <div class="mx-5" style="padding-top: 70px">
+
+        {{$ListArticles->links()}}
+
             <div class="row">
                 @foreach($ListArticles as $art)
                     <div class="col-12 col-sm-6 col-md-3 mb-5">
@@ -18,6 +21,10 @@
 
                 @endforeach
             </div>
+    <div class="">
+        {{$ListArticles->links()}}
     </div>
+</div>
+
 
 @endsection

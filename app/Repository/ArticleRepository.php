@@ -41,7 +41,7 @@ class ArticleRepository
     //metodos adicionales
     public function getListArticleSubcategorie($id){
 
-        $ListArticles=Article::with('photos')->where('subcategory_id',$id)->paginate();
+        $ListArticles=Article::with('photos')->where('subcategory_id',$id)->paginate(20);
 
         return $ListArticles;
     }
