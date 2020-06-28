@@ -15,25 +15,28 @@
                                 <img src="{{$p->url}}" class="card-img-top" height="270px">
                                 @endif
                             @endforeach
-                            <div class="card-body card-body-cascade text-center">
-                                <p class="card-text">{{$art->model}}</p>
+                            <div class="card-body card-body-cascade text-center p-2">
+                                <p class="card-text  text-primary"><strong>{{$art->model}}</strong></p>
                                 <!--Rating-->
-                                <ul class="nav">
-                                    <li class="nav item"><i class="fas fa-star"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star"></i></li>
-                                    <li class="nav-item"><i class="far fa-star"></i></li>
+
+                                <ul class="nav d-flex justify-content-center mb-1">
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+
                                 </ul>
 
                             </div>
                                 <!--Card footer-->
                                 <div class="card-footer">
-                                    <span class="float-left"><strong>S/.</strong> {{$art->price}}</span>
+                                    <span class="float-left"><strong>S/. {{$art->price}}</strong></span>
                                     <span class="float-right">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Cart"><i class="fas fa-shopping-cart mr-3"></i></a>
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Share"><i class="fas fa-share-alt mr-3"></i></a>
-                                        <a href="#" class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist"><i class="fas fa-heart"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Contactar por whatsapp"><i class="fab fa-whatsapp mr-2 text-success"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Agregar al carrito de compras"><i class="fas fa-shopping-cart mr-2 text-info"></i></a>
+                                        <a href="#" class="active" data-toggle="tooltip" data-placement="top" title="Compartir"><i class="fas fa-share-alt mr-2 text-dark"></i></a>
+                                        <a href="#" class="active" data-toggle="tooltip" data-placement="top" title="Agregar a favoritos"><i class="fas fa-heart"></i></a>
                                   </span>
                                 </div>
                         </div>
