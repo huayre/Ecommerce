@@ -14,7 +14,7 @@
                       @include('App.Admin.carrusel.delete')
                      <small class="badge badge-warning">{{$loop->index+1}}</small>
                     <div class="">
-                        <img src="{{$car->url}}" class="img-thumbnail mb-4 img-rounded border border-dark" height="100px">
+                        <img src="{{$car->url}}" class=" w-100  mb-4 img-rounded border border-dark" height="300">
                     </div>
                 </div>
             @endforeach

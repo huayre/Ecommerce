@@ -5,6 +5,7 @@
     .carousel-control-prev {
         filter: invert(100%);
     }
+
 </style>
 <div  class=" @if(isset($ListArticles)) d-none @endif" >
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">

@@ -43,3 +43,7 @@ Route::group(['middleware'=>'auth'],function(){
 //carrusel
     Route::resource('carrusel','Admin\CarruselController');
 });
+
+//prueba portada1
+
+Route::view('portada1','layouts/portada1/index');

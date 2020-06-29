@@ -14,12 +14,28 @@
                         <div class="carousel-item @if($loop->index==0)active @endif">
                               @foreach($art->photos as $p)
                                 <div class="col-md-4">
-                                    <div class="card card-body">
+                                    <div class="card shadow m-2">
                                             @if($loop->index==0)
                                                 <a href="{{route('detalleproducto',$art->id)}}">
                                                     <img src="{{$p->url}}" class="card-img-top" height="270px">
                                                 </a>
                                             @endif
+                                                <div class="card-body card-body-cascade text-center p-2">
+                                                    <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
+                                                    <!--Rating-->
+
+                                                    <ul class="nav d-flex justify-content-center mb-1">
+                                                        <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                        <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                        <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                        <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                        <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
+
+
+                                                </div>
+
                                     </div>
                                 </div>
                                @endforeach
@@ -37,8 +53,17 @@
                 </a>
             </div>
         </div>
-        <h5 class="mt-2">Advances one slide at a time</h5>
     </div>
+    <div class="row mx-4 my-5">
+        <div class="col-md-6">
+            <img class="w-100 " src="{{asset('images/varones.jpg')}}" height="500">
+        </div>
+        <div class="col-md-6">
+            ódopmf
+        </div>
+    </div>
+
+
 
 @endsection
 @section('script')
