@@ -12,7 +12,9 @@
                         <div class="card shadow">
                             @foreach($art->photos as $p)
                                 @if($loop->index==0)
-                                <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                    <a href="{{route('detalleproducto',$art->id)}}">
+                                        <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                    </a>
                                 @endif
                             @endforeach
                             <div class="card-body card-body-cascade text-center p-2">
@@ -25,7 +27,6 @@
                                     <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
                                     <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
                                     <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-
                                 </ul>
 
                             </div>

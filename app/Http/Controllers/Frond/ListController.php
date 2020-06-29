@@ -17,4 +17,8 @@ class ListController extends Controller
         $ListArticles=$this->ArticleRepository->getListArticleSubcategorie($id);
         return view('App.Frond.ListArticle')->with(['ListArticles'=>$ListArticles]);
     }
+    public function GetDetalleProduct($id){
+        $Article=$this->ArticleRepository->find($id);
+        return view('App.Frond.DetallesArticulo')->with(['Article'=>$Article]);
+    }
 }

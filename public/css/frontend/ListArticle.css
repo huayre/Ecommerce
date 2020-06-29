@@ -5,3 +5,9 @@
 .card{
     height:400px;
 }
+.card-footer{
+     background: #FCF3CF;
+}
+.card-body{
+   background:#FEF9E7;
+}

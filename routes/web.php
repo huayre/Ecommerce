@@ -23,7 +23,7 @@ Route::get('logout',function(){
 //frontend
 Route::get('/','HomeController@index')->name('inicio');
 Route::get('listsubcategorie{id}','Frond\ListController@getListArticleSubcategorie')->name('listsubcategorie');
-
+Route::get('detallesproductos{id}','Frond\ListController@GetDetalleProduct')->name('detalleproducto');
 
 
 

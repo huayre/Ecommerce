@@ -46,5 +46,10 @@ class ArticleRepository
         return $ListArticles;
     }
 
+    public function GetArticulosMasVendidos(){
+        $ListArticles=Article::with('photos')->get();
+        return $ListArticles->random(20);
+    }
+
 
 }
