@@ -48,7 +48,7 @@ class ArticleRepository
 
     public function GetArticulosMasVendidos(){
         $ListArticles=Article::with('photos')->get();
-        return $ListArticles->random(20);
+        return $ListArticles->random(6);
     }
 
 
