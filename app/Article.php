@@ -15,8 +15,13 @@ class Article extends Model
     public function photos(){
         return $this->hasManyThrough(Photo::class,Color::class);
     }
+    public function photo(){
+        return $this->hasOneThrough(Photo::class,Color::class);
+    }
 
-
+    public function colors(){
+        return $this->hasMany(Color::class);
+    }
 }
 
 

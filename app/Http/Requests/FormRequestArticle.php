@@ -28,7 +28,8 @@ class FormRequestArticle extends FormRequest
             'subcategory_id'=>'required',
             'price'=>'required',
             'gender'=>'required',
-            'description'=>'required'
+            'description'=>'required',
+            'size'=>'required'
         ];
     }
 
@@ -39,8 +40,8 @@ class FormRequestArticle extends FormRequest
             'subcategory_id.required'=>'Seleccione una subcategoría',
             'price.required'=>'Ingrese el précio',
             'gender.required'=>'Seleccione un género',
-            'description.required'=>'Ingrese la descripción'
-
+            'description.required'=>'Ingrese la descripción',
+            'size.required'=>'Selecione por lo menos una talla'
         ];
 
     }

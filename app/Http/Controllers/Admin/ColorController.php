@@ -21,9 +21,8 @@ class ColorController extends Controller
 
     public function index($id_article)
     {
-        $Colors= $this->ColorRepository->listColor($id_article);
-        $ListSizes=$this->ColorRepository->listSizes();
-        return view('App.Admin.color.index',['Colors'=>$Colors,'ListSizes'=>$ListSizes,'id_article'=>$id_article]);
+        $Colors= $this->ColorRepository->listColor($id_article);;
+        return view('App.Admin.color.index',['Colors'=>$Colors,'id_article'=>$id_article]);
     }
 
     /**

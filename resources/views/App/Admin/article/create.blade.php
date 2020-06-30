@@ -65,7 +65,19 @@
                          @error('description')
                          <small class="text-danger">{{$message}}</small>
                          @enderror
-                        </div>
+                     </div>
+                    <div class="form-group">
+                        <label>Ingrese las tallas<span class="text-danger">(*)</span></label>
+                        <select class="form-control selectpicker" multiple title="Seleccione las tallas" name="value[]">
+                            @foreach($ListSizes as $size)
+                                <option value="{{$size->id}}" data-content="<span class='badge badge-warning'>{{$size->value}}</span>"></option>
+                            @endforeach
+                        </select>
+                        @error('size')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
+
+                    </div>
                 <div class="form-group  mb-3 float-right">
                     <button type="submit" class="btn btn-primary" id="btn_save_article">Guardar</button>
                     <a href="{{route('article.index')}}"  class="btn btn-dark">Cancelar</a>

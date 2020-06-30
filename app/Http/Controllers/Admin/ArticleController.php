@@ -37,7 +37,8 @@ class ArticleController extends Controller
     public function create()
     {
         $ListaSubCategorias=$this->SubCategoryRepository->all();
-        return view('App.Admin.article.create')->with(['ListaSubCategorias'=>$ListaSubCategorias]);
+        $ListSizes=$this->ArticleRepository->allSizes();
+        return view('App.Admin.article.create')->with(['ListaSubCategorias'=>$ListaSubCategorias,'ListSizes'=>$ListSizes]);
     }
 
     /**

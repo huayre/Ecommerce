@@ -21,18 +21,6 @@
                                 <input type="text" class="form-control" name="name">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label>Ingrese las tallas</label>
-                            <select class="form-control selectpicker" multiple title="Seleccione las tallas" name="value[]">
-                                @foreach($ListSizes as $size)
-                                    <option value="{{$size->id}}" data-content="<span class='badge badge-warning'>{{$size->value}}</span>"></option>
-                                @endforeach
-                            </select>
-
-                        </div>
-
-
-
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-primary">Guardar</button>

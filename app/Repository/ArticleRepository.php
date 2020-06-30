@@ -7,7 +7,7 @@ namespace App\Repository;
 
 use App\Article;
 use App\Color;
-use App\Photo;
+use App\Size;
 
 class ArticleRepository
 {
@@ -49,6 +49,13 @@ class ArticleRepository
     public function GetArticulosMasVendidos(){
         $ListArticles=Article::with('photos')->get();
         return $ListArticles->random(6);
+    }
+    public function findAricle($id)
+    {
+        return Article::with('photo','colors')->find($id);
+    }
+    public  function allSizes(){
+        return Size::all();
     }
 
 

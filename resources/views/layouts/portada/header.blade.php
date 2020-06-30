@@ -24,8 +24,18 @@
                 <h3 id="textnacional" class="text-center">Envios A Nivel Nacional</h3>
             </div>
             <div class="col d-flex justify-content-end">
-                <a href="https://www.facebook.com/toxvic/?modal=admin_todo_tour" target="_blank"><i class=" fab fa-facebook mx-2" style="color:#3b5998"></i></a>
-                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class=" fab fa-instagram" style="color:#B71C1C" ></i></a>
+                <a href="https://www.facebook.com/toxvic/?modal=admin_todo_tour" target="_blank">
+                    <span class="fa-stack" style="vertical-align: top;">
+                      <i class="fas fa-circle fa-stack-2x text-white"></i>
+                        <i class=" fab fa-facebook fa-stack-1x fa-inverse " style="color:#3b5998"></i>
+                    </span>
+                </a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                    <span class="fa-stack" style="vertical-align: top;">
+                      <i class="fas fa-circle fa-stack-2x text-white"></i>
+                        <i class="fab fa-instagram  fa-stack-1x fa-inverse " style="color:#B71C1C"></i>
+                    </span>
+                </a>
             </div>
         </div>
     </div>

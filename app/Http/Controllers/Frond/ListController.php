@@ -18,7 +18,7 @@ class ListController extends Controller
         return view('App.Frond.ListArticle')->with(['ListArticles'=>$ListArticles]);
     }
     public function GetDetalleProduct($id){
-        $Article=$this->ArticleRepository->find($id);
-        return view('App.Frond.DetallesArticulo')->with(['Article'=>$Article]);
+        $ListArticles=$this->ArticleRepository->findAricle($id);
+        return view('App.Frond.DetallesArticulo')->with(['ListArticles'=>$ListArticles]);
     }
 }

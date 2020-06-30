@@ -5,7 +5,6 @@ namespace App\Repository;
 
 
 use App\Color;
-use App\Size;
 
 class ColorRepository implements BaseRepository
 {
@@ -36,9 +35,6 @@ class ColorRepository implements BaseRepository
         return Color::find($id);
     }
 
-    public  function listSizes(){
-        return Size::all();
-    }
     public function listColor($id){
         return Color::where('article_id',$id)->get();
     }
