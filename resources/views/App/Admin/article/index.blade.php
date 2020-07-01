@@ -11,7 +11,9 @@
                 <th>Modelo</th>
                 <th>Subcategoría</th>
                 <th>Géneros</th>
+                <th>Tallas</th>
                 <th>Précio</th>
+                <th>Marca</th>
                 <th>Descripción</th>
                 <th>Imagenes</th>
                 <th width="280px " class="text-center">Opciones</th>
@@ -24,11 +26,22 @@
                     <td>{{$art->model}}</td>
                     <td>{{$art->subcategorie->name}}</td>
                     <td>{{$art->gender}}</td>
+                    <td class="table-primary">
+                        <div class=" d-flex justify-content-center ">
+                            <a href="#" data-toggle="modal" data-target="#modal-sizes-list-{{$art->id}}" class="text-success btn btn-default">
+                                <i class="fas fa-align-justify"></i>
+                            </a>
+                        </div>
+                        @include('App.Admin.article.modal_sizes_list')
+                    </td>
                     <td>{{$art->price}}</td>
-                    <td class=" d-flex justify-content-center table-primary">
-                        <a href="#" data-toggle="modal" data-target="#modal-description-{{$art->id}}" class="text-success btn btn-default">
-                            <i class="fas fa-align-justify"></i>
-                        </a>
+                    <td>{{$art->brand}}</td>
+                    <td class="table-primary">
+                        <div class=" d-flex justify-content-center ">
+                            <a href="#" data-toggle="modal" data-target="#modal-description-{{$art->id}}" class="text-success btn btn-default">
+                                <i class="fas fa-align-justify"></i>
+                            </a>
+                        </div>
                         @include('App.Admin.article.modal_description')
                     </td>
                     <td class="table-warning">

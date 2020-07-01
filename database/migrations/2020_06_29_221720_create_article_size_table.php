@@ -20,7 +20,7 @@ class CreateArticleSizeTable extends Migration
             $table->timestamps();
             $table->foreign('size_id')->references('id')->on('sizes');
             $table->foreign('article_id')->references('id')->on('articles');
-            $table->timestamps();
+
         });
     }
 

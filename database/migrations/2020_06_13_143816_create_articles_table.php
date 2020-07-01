@@ -18,8 +18,10 @@ class CreateArticlesTable extends Migration
             $table->string('model');
             $table->bigInteger('subcategory_id')->unsigned();
             $table->string('gender');
-            $table->text('description')->nullable();
-            $table->float('price')->nullable();
+            $table->text('description');
+            $table->float('price');
+            $table->string('brand');
+
             $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
 
             $table->timestamps();

@@ -29,7 +29,8 @@ class FormRequestArticle extends FormRequest
             'price'=>'required',
             'gender'=>'required',
             'description'=>'required',
-            'size'=>'required'
+            'size'=>'required',
+            'brand'=>'required'
         ];
     }
 
@@ -41,7 +42,8 @@ class FormRequestArticle extends FormRequest
             'price.required'=>'Ingrese el précio',
             'gender.required'=>'Seleccione un género',
             'description.required'=>'Ingrese la descripción',
-            'size.required'=>'Selecione por lo menos una talla'
+            'size.required'=>'Selecione por lo menos una talla',
+            'brand.required'=>'Ingrese la marca'
         ];
 
     }

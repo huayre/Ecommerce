@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\FormRequestArticle;
 use App\Repository\ArticleRepository;
-use App\Repository\SubCategoryRepository;
+use App\Repository\CategoryRepository;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -16,11 +16,11 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     private $ArticleRepository;
-    private $SubCategoryRepository;
-    public function __construct(ArticleRepository $ArticleRepository,SubCategoryRepository $SubCategoryRepository)
+    private $CategoryRepository;
+    public function __construct(ArticleRepository $ArticleRepository,CategoryRepository $CategoryRepository)
     {
         $this->ArticleRepository=$ArticleRepository;
-        $this->SubCategoryRepository=$SubCategoryRepository;
+        $this->CategoryRepository=$CategoryRepository;
     }
 
     public function index()
@@ -36,9 +36,9 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        $ListaSubCategorias=$this->SubCategoryRepository->all();
+        $ListaCategorias=$this->CategoryRepository->all();
         $ListSizes=$this->ArticleRepository->allSizes();
-        return view('App.Admin.article.create')->with(['ListaSubCategorias'=>$ListaSubCategorias,'ListSizes'=>$ListSizes]);
+        return view('App.Admin.article.create')->with(['ListaCategorias'=>$ListaCategorias,'ListSizes'=>$ListSizes]);
     }
 
     /**
@@ -49,8 +49,8 @@ class ArticleController extends Controller
      */
     public function store(FormRequestArticle $request)
     {
-      $this->ArticleRepository->create($request->validated());
-        toastr()->success('El producto fue registrado correctamente!');
+      $this->ArticleRepository->create($request);
+      toastr()->success('El producto fue registrado correctamente!');
       return redirect()->route('article.index');
 
     }

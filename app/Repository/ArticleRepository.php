@@ -18,8 +18,13 @@ class ArticleRepository
 
     public function create($data)
     {
-       $article= Article::create($data);
-       return $article;
+
+       $article= Article::create($data->all());
+       $contador=0;
+       while ($contador<count($data->size)){
+           $article->sizes()->attach($data->size[$contador]);
+           $contador++;
+       }
     }
 
     public function update($data, $id)

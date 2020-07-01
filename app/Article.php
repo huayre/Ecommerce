@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    protected $fillable=['gender','subcategory_id','price','description','model'];
+    protected $fillable=['gender','subcategory_id','price','description','model','brand'];
 
     public function subcategorie(){
         return $this->belongsTo(Subcategory::class,'subcategory_id');
@@ -21,6 +21,10 @@ class Article extends Model
 
     public function colors(){
         return $this->hasMany(Color::class);
+    }
+    public function sizes()
+    {
+        return $this->belongsToMany(Size::class);
     }
 }
 
