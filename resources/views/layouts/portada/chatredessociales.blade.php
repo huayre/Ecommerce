@@ -1,7 +1,7 @@
 <style>
     .appwhatsapp{
         position:fixed;
-        right: 26px;
+        right: 34px;
         bottom: 100px;
         width: 60px;
         z-index: 1000;
