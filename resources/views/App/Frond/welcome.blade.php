@@ -12,7 +12,7 @@
         @foreach($ListArticlesMasComprados as $art)
             <div class="item">
                 @foreach($art->photos as $p)
-                    <div class="d-block ">
+                    <div class="d-block">
                         <div class="card shadow m-2">
                             @if($loop->index==0)
                                 <a href="{{route('detalleproducto',$art->id)}}">
@@ -87,6 +87,8 @@
             nav:true,
             autoplay:true,
             autoplayTimeout:1500,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
             responsive:{
                 0:{
                     items:1

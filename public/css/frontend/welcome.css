@@ -30,4 +30,7 @@
 .card{
     height:400px;
 }
+.card:hover{
+    background: #abebc6;
+}
 

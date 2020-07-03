@@ -1,10 +1,33 @@
 <style>
-    .carousel-control-next {
-        filter: invert(100%);
+    @media(min-width: 200px) {
+        .imagen{
+            height:200px;
+        }
     }
-    .carousel-control-prev {
-        filter: invert(100%);
-    }
+
+   @media(min-width: 576px) {
+       .imagen{
+           height:250px;
+       }
+   }
+   @media(min-width:768px) {
+       .imagen{
+           height:300px;
+       }
+   }
+   @media(min-width:992px) {
+       .imagen{
+           height:400px;
+       }
+   }
+   @media(min-width:1200px) {
+       .imagen{
+           height: 470px;
+       }
+   }
+   .controles{
+       color: #ffff00;
+   }
 
 </style>
 <div  class=" @if(isset($ListArticles)) d-none @endif" >
@@ -17,18 +40,16 @@
         <div class="carousel-inner">
             @foreach($ListCarrusel as $car)
                 <div class="carousel-item @if($loop->index==0) active @endif" data-interval="1500">
-                    <img src="{{$car->url}}" class="w-100" alt="..." style="height: 500px">
+                    <img src="{{$car->url}}" class="w-100 imagen" alt="imagen_carousel">
                 </div>
             @endforeach
         </div>
 
         <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only text">Previous</span>
+            <i class="fas fa-chevron-left fa-2x controles"></i>
         </a>
         <a class="carousel-control-next " href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <i class="fas fa-chevron-right fa-2x controles "></i>
         </a>
     </div>
 </div>

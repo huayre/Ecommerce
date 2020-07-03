@@ -10,7 +10,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('template_admin/plugins/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/frond.css')}}">
-
     <link rel="stylesheet" href="{{asset('packages/owl_carousel/owl.carousel.css')}}">
     <title>Hello, world!</title>
 
