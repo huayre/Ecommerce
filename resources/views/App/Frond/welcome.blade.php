@@ -3,12 +3,13 @@
     <link rel="stylesheet" href="{{asset('css/frontend/welcome.css')}}">
 @endsection
 @section('contenido')
+@include('layouts.portada.carrusel')
 <div style="height: 10px;background:#f4fb39"></div>
 <div class="mt-5">
 
     <h2 class="font-weight-light text-primary text-center"><i class="fas fa-shopping-bag text-danger"></i><strong> Los modelos más vendidos de la temporada </strong><i class="fas fa-shopping-bag text-danger"></i></h2>
 
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel owl-theme modelos_mas_vendidos">
         @foreach($ListArticlesMasComprados as $art)
             <div class="item">
                 @foreach($art->photos as $p)
@@ -107,6 +108,16 @@
                 }
             }
         })
+    </script>
+    <script>
+         window.sr= ScrollReveal();
+         sr.reveal('.header_principal_titulo',{
+            duration:1000,
+            origin:'right',
+            distance:'400px'
+
+        });
+
     </script>
 
 @endsection

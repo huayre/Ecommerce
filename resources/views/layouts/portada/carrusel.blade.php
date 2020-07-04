@@ -30,7 +30,7 @@
    }
 
 </style>
-<div  class=" @if(isset($ListArticles)) d-none @endif" >
+<div  class="carousel_principal" >
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators" >
             @foreach($ListCarrusel as $car)

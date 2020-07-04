@@ -14,7 +14,7 @@
     }
 </style>
 
-    <div class="d-none d-md-block" style="background:#f4fb39">
+    <div class="d-none d-md-block " style="background:#f4fb39">
         <div class="container-fluid">
             <div class="p-3 row">
                 <div class="col">
@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <h3 id="textnacional" class="text-center">Envios A Nivel Nacional</h3>
+                    <h3 id="textnacional" class="text-center header_principal_titulo">Envios A Nivel Nacional</h3>
                 </div>
                 <div class="col d-flex justify-content-end">
                     <a href="https://www.facebook.com/toxvic/?modal=admin_todo_tour" target="_blank">
@@ -57,8 +57,8 @@
                 <ul class="navbar-nav mr-auto" id="tamaño">
                     @foreach($ListCategory as $cat)
                         @if($cat->subcategories->count()>0)
-                            <li class="nav-item dropdown navbar-item has-dropdown is-hoverable text-uppercase font-weight-bold">
-                                <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item dropdown navbar-item has-dropdown is-hoverable text-uppercase font-weight-bold ">
+                                <a class="nav-link dropdown-toggle  text-white  n" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     {{$cat->name}}
                                     <i class="fas fa-angle-down text-warning"></i>
                                 </a>

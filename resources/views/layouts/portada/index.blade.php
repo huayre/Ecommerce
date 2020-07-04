@@ -15,14 +15,22 @@
 
     @yield('styles')
 </head>
+<style>
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; // remove the gap so it doesn't close
+    }
+</style>
 <body style="background:#EAECEE">
 
+
         <div>
+
              @include('layouts.portada.header')
-             @include('layouts.portada.carrusel')
              @yield('contenido')
               @include('layouts.portada.chatredessociales')
              @include('layouts.portada.footer')
+
          </div>
 
 
@@ -35,8 +43,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="{{asset('bootstrap4.5/js/bootstrap.js')}}"></script>
 <script src="{{asset('packages/owl_carousel/owl.carousel.js')}}"></script>
-@yield('script')
+<script src="https://unpkg.com/scrollreveal"></script>
 
+@yield('script')
 </body>
 </html>
 

@@ -27,7 +27,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('layouts.portada.index',function ($view){
+        View::composer(['layouts.portada.index','App.Frond.welcome'],function ($view){
             $ListCarrusel=CarruselRepository::ListaCarrusel();
             $ListCategory=CategoryRepository::CategoriesActives();
 
