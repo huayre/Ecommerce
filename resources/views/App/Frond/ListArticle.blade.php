@@ -13,11 +13,12 @@
                             @foreach($art->photos as $p)
                                 @if($loop->index==0)
                                     <a href="{{route('detalleproducto',$art->id)}}">
-                                        <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                        <img src="{{$p->url}}" class="card-img-top" height="270px" data-toggle="tooltip" data-placement="top" title="Click para ver mas detalles del producto">
                                     </a>
+                                    @break
                                 @endif
                             @endforeach
-                                <div class="card-body card-body-cascade text-center p-2">
+                                <div class="card-body card-body-cascade text-center p-2 ">
                                     <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
                                     <!--Rating-->
 
@@ -37,7 +38,6 @@
                                   </span>
 
                                 </div>
-
                         </div>
                     </div>
 

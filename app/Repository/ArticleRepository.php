@@ -55,9 +55,9 @@ class ArticleRepository
         $ListArticles=Article::with('photos')->get();
         return $ListArticles->random(6);
     }
-    public function findAricle($id)
+    public function findArticle($id)
     {
-        return Article::with('photo','colors')->find($id);
+        return Article::with('photos','colors')->find($id);
     }
     public  function allSizes(){
         return Size::all();

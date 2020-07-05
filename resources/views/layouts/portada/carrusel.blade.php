@@ -26,11 +26,40 @@
        }
    }
    .controles{
-       color: #ffff00;
+       color:#1ABC9C;
    }
+    /*cambiar color del indicador carrusel*/
+    ol.carousel-indicators {
+        position: absolute;
+        bottom: 5px;
+        margin: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+    }
+
+    ol.carousel-indicators li,
+    ol.carousel-indicators li.active {
+        width: 10px;
+        height: 10px;
+        margin: 0;
+        border-radius: 50%;
+        border: 0;
+        background: transparent;
+    }
+
+    ol.carousel-indicators li {
+        background: rgba(255,255,255,0.39);
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    ol.carousel-indicators li.active {
+        background:#1ABC9C;
+    }
 
 </style>
-<div  class="carousel_principal" >
+<div>
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators" >
             @foreach($ListCarrusel as $car)

@@ -39,4 +39,8 @@ class PhotoRepository implements BaseRepository
         return Size::all();
     }
 
+    public function listPhotos($color_id){
+       return  $ListPhotos=Photo::where('color_id',$color_id)->get();
+    }
+
 }

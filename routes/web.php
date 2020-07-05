@@ -24,7 +24,7 @@ Route::get('logout',function(){
 Route::get('/','HomeController@index')->name('inicio');
 Route::get('listsubcategorie{id}','Frond\ListController@getListArticleSubcategorie')->name('listsubcategorie');
 Route::get('detallesproductos{id}','Frond\ListController@GetDetalleProduct')->name('detalleproducto');
-
+Route::get('getPhotos/{id}','Frond\ListController@getPhotos')->name('getPhotos');
 
 
 //Admin
@@ -44,6 +44,3 @@ Route::group(['middleware'=>'auth'],function(){
     Route::resource('carrusel','Admin\CarruselController');
 });
 
-//prueba portada1
-
-Route::view('portada1','layouts/portada1/index');

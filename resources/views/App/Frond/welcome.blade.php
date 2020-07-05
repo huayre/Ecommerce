@@ -4,41 +4,41 @@
 @endsection
 @section('contenido')
 @include('layouts.portada.carrusel')
+
 <div style="height: 10px;background:#f4fb39"></div>
 <div class="mt-5">
 
     <h2 class="font-weight-light text-primary text-center"><i class="fas fa-shopping-bag text-danger"></i><strong> Los modelos más vendidos de la temporada </strong><i class="fas fa-shopping-bag text-danger"></i></h2>
 
-    <div class="owl-carousel owl-theme modelos_mas_vendidos">
+    <div class="owl-carousel owl-theme ">
         @foreach($ListArticlesMasComprados as $art)
             <div class="item">
-                @foreach($art->photos as $p)
-                    <div class="d-block">
-                        <div class="card shadow m-2">
+                <div class="card shadow m-2">
+                    <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
+                        @foreach($art->photos as $p)
                             @if($loop->index==0)
-                                <a href="{{route('detalleproducto',$art->id)}}">
-                                    <img src="{{$p->url}}" class="card-img-top" height="270px">
-                                </a>
+                                <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                @break
                             @endif
+                        @endforeach
                             <div class="card-body card-body-cascade text-center p-2">
-                                <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
-                                <!--Rating-->
+                                            <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
+                                            <!--Rating-->
 
-                                <ul class="nav d-flex justify-content-center mb-1">
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                </ul>
-                                <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
+                                            <ul class="nav d-flex justify-content-center mb-1">
+                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                            </ul>
+                                            <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
 
 
                             </div>
 
-                        </div>
-                    </div>
-                @endforeach
+                    </a>
+                </div>
             </div>
         @endforeach
     </div>
@@ -47,33 +47,32 @@
     <div class="owl-carousel owl-theme">
         @foreach($ListArticlesMasComprados as $art)
             <div class="item">
-                @foreach($art->photos as $p)
-                    <div class="d-block ">
-                        <div class="card shadow m-2">
+                <div class="card shadow m-2">
+                    <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
+                        @foreach($art->photos as $p)
                             @if($loop->index==0)
-                                <a href="{{route('detalleproducto',$art->id)}}">
-                                    <img src="{{$p->url}}" class="card-img-top" height="270px">
-                                </a>
+                                <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                @break
                             @endif
-                            <div class="card-body card-body-cascade text-center p-2">
-                                <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
-                                <!--Rating-->
+                        @endforeach
+                        <div class="card-body card-body-cascade text-center p-2">
+                            <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
+                            <!--Rating-->
 
-                                <ul class="nav d-flex justify-content-center mb-1">
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                </ul>
-                                <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
+                            <ul class="nav d-flex justify-content-center mb-1">
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                            </ul>
+                            <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
 
-
-                            </div>
 
                         </div>
-                    </div>
-                @endforeach
+
+                    </a>
+                </div>
             </div>
         @endforeach
     </div>

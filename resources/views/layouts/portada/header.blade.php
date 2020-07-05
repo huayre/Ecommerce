@@ -1,11 +1,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
 <style>
-    .navbar-dropdown a:hover { background:yellow; }
+    .navbar-dropdown a:hover { background:#1ABC9C ; }
 
     .navbar-nav li:hover {
-        border-bottom:  solid yellow;
-
+        background:#1ABC9C ;
     }
     #textnacional{
         font-family: 'Damion', cursive;
