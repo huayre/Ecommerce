@@ -30,10 +30,10 @@
                         </div>
 
                     <a class="carousel-control-prev carousel_control_prev" href="#carouselExampleIntervalDetalleArticle" role="button" data-slide="prev">
-                            <i class="fas fa-chevron-left  controles"></i>
+                           <small class="badge badge-pill badge-dark"> <i class="fas fa-chevron-left  controles"></i></small>
                         </a>
                     <a class="carousel-control-next carousel_control_next " href="#carouselExampleIntervalDetalleArticle" role="button" data-slide="next">
-                            <i class="fas fa-chevron-right  controles "></i>
+                        <small class="badge badge-pill badge-dark"> <i class="fas fa-chevron-right  controles "></i></small>
                         </a>
                     </div>
 
@@ -109,6 +109,41 @@
 
     </div>
 
+    <h2 class="font-weight-light text-primary text-center"><i class="fas fa-shopping-bag text-danger"></i><strong> Otros productos que te pueden interesar </strong><i class="fas fa-shopping-bag text-danger"></i></h2>
+ {{--Carousel de productos --}}
+    <div class="owl-carousel owl-theme ">
+        @foreach($ListArticlesSubcategories as $art)
+            <div class="item">
+                <div class="card shadow m-2">
+                    <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
+                        @foreach($art->photos as $p)
+                            @if($loop->index==0)
+                                <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                @break
+                            @endif
+                        @endforeach
+                        <div class="card-body card-body-cascade text-center p-2">
+                            <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
+                            <!--Rating-->
+
+                            <ul class="nav d-flex justify-content-center mb-1">
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                            </ul>
+                            <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
+
+
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        @endforeach
+    </div>
+
 
 
 @endsection
@@ -146,4 +181,33 @@
 
         })
     </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:7,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:1500,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:2
+                },
+                576:{
+                    items:2
+                },
+                700:{
+                    items:3
+                },
+                1100:{
+                    items:4
+                },
+                1200:{
+                    items:5
+                }
+            }
+        })
+    </script>
 @endsection
+

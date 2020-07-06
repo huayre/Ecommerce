@@ -11,7 +11,7 @@
     float: left;
 }
 .controles{
-    color:#0c0c0c;
+    color:#ffffff;
 }
 .color_size{
     width: 25px;
@@ -49,4 +49,40 @@ ol.carousel-indicators li {
 
 ol.carousel-indicators li.active {
     background:#0c0c0c;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #000b16;
+    color: white;
+}
+.owl-carousel .owl-nav button.owl-next{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: #000b16;
+}
+.card{
+    height:400px;
+}
+.card:hover{
+    background: #abebc6;
 }

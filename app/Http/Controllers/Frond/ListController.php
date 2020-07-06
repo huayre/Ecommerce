@@ -21,8 +21,9 @@ class ListController extends Controller
         return view('App.Frond.ListArticle')->with(['ListArticles'=>$ListArticles]);
     }
     public function GetDetalleProduct($id){
-        $ListArticles=$this->ArticleRepository->findArticle($id);
-        return view('App.Frond.DetallesArticulo')->with(['ListArticles'=>$ListArticles]);
+        $Articles=$this->ArticleRepository->findArticle($id);
+        $ListArticlesSubcategories=$this->ArticleRepository->listArticleInteresSubcaptegories($Articles->subcategory_id);
+        return view('App.Frond.DetallesArticulo')->with(['ListArticles'=>$Articles,'ListArticlesSubcategories'=>$ListArticlesSubcategories]);
     }
     public function getPhotos($color_id){
         $ListPhotos=$this->PhotoRepository->listPhotos($color_id);

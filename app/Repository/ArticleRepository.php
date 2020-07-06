@@ -62,6 +62,9 @@ class ArticleRepository
     public  function allSizes(){
         return Size::all();
     }
+    public  function listArticleInteresSubcaptegories($subcategory_id){
+        return Article::with('photos')->where('subcategory_id',$subcategory_id)->get();
+    }
 
 
 }
