@@ -44,32 +44,34 @@
 
 
 
-    <nav class="navbar  sticky-top navbar-expand-lg navbar-light" style="background:#000000">
+    <nav class="navbar  sticky-top navbar-expand-lg navbar-light bg-light" style="background:#000000">
         <div class="container-xl">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-md-none " href="{{route('inicio')}}">
+                <img src="{{asset('images/empresa/logo_toxvic.png')}}" width="120" height="30" alt="" loading="lazy">
+            </a>
 
-                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars" style="color:#000000; font-size:28px;"></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:#000000">
                 <ul class="navbar-nav mr-auto" id="tamaño">
                     @foreach($ListCategory as $cat)
                         @if($cat->subcategories->count()>0)
                             <li class="nav-item dropdown navbar-item has-dropdown is-hoverable text-uppercase font-weight-bold ">
-                                <a class="nav-link dropdown-toggle  text-white  n" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                <a class="nav-link dropdown-toggle active " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     {{$cat->name}}
-                                    <i class="fas fa-angle-down text-warning"></i>
+                                    <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu navbar-dropdown" aria-labelledby="navbarDropdown">
                                     @foreach($cat->subcategories as $sub)
-                                            <a class="dropdown-item navbar-item" href="{{route('listsubcategorie',$sub->id)}}">{{$sub->name}}</a>
+                                            <a class="dropdown-item navbar-item " href="{{route('listsubcategorie',$sub->id)}}">{{$sub->name}}</a>
                                     @endforeach
                                 </div>
                             </li>
                         @else
-                            <li class="nav-item text-uppercase font-weight-bold">
-                                <a class="nav-link text-white" href="#">{{$cat->name}}</a>
+                            <li class="nav-item text-uppercase font-weight-bold active">
+                                <a class="nav-link" href="#">{{$cat->name}}</a>
                             </li>
                         @endif
 

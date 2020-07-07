@@ -5,7 +5,7 @@
 @section('contenido')
 @include('layouts.portada.carrusel')
 
-<div style="height: 10px;background:#f4fb39"></div>
+<div style="height: 6px;background:#000000"></div>
 <div class="mt-5">
 
     <h2 class="font-weight-light text-primary text-center"><i class="fas fa-shopping-bag text-danger"></i><strong> Los modelos más vendidos de la temporada </strong><i class="fas fa-shopping-bag text-danger"></i></h2>
