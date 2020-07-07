@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="{{asset('bootstrap4.5/css/bootstrap.min.css')}}" >
    <style>
        #particles-js{
-           background:#000000;
+           background-image:url("{{asset('images/empresa/fondologin2.jpg')}}");
+           background-size:cover;
+           background-position: center center;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-color: #000b16;
            position: fixed;
            height: 100vh;
            width: 100%;

@@ -3,10 +3,10 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center " style="padding-top: 120px">
-            <div class="card col-10 col-sm-10 col-md-6 col-lg-4">
-                <div class="card-body ">
+            <div class="card col-10 col-sm-10 col-md-6 col-lg-4 shadow ">
+                <div class="card-body px-0 ">
                     <div class="row">
-                        <img class="mx-auto mb-2" src="{{asset('images/empresa/logo_toxvic.png')}} "width="160" height="60">
+                        <img class="mx-auto mb-2" src="{{asset('images/empresa/logo_toxvic.png')}} "width="200" height="60">
                     </div>
                     <h4 class="text-center">Iniciar Sesión</h4>
                     <form method="POST" action="{{ route('login') }}">
@@ -16,7 +16,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Usuario">
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Contraseña">
                                 </div>
 
                                 @error('email')
@@ -30,7 +30,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
                                 </div>
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Contraseña">
 
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
