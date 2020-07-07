@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="{{asset('template_admin/plugins/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/frond.css')}}">
     <link rel="stylesheet" href="{{asset('packages/owl_carousel/owl.carousel.css')}}">
-    <title>Hello, world!</title>
 
     @yield('styles')
 </head>
@@ -20,21 +19,16 @@
         display: block;
         margin-top: 0;
     }
+
+
 </style>
+
 <body>
-
-
-        <div>
 
              @include('layouts.portada.header')
              @yield('contenido')
               @include('layouts.portada.chatredessociales')
              @include('layouts.portada.footer')
-
-         </div>
-
-
-
 
 
         <!-- Optional JavaScript -->
@@ -44,6 +38,8 @@
 <script src="{{asset('bootstrap4.5/js/bootstrap.js')}}"></script>
 <script src="{{asset('packages/owl_carousel/owl.carousel.js')}}"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="{{asset('packages/particlesjs/particles.min.js')}}"></script>
+<script src="{{asset('packages/particlesjs/appparticles.js')}}"></script>
 
 @yield('script')
 </body>

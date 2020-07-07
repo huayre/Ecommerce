@@ -5,81 +5,81 @@
 @section('contenido')
 @include('layouts.portada.carrusel')
 
-<div style="height: 6px;background:#000000"></div>
-<div class="mt-5">
+    <div class="pt-5" style="background: #000000">
 
-    <h2 class="font-weight-light text-primary text-center"><i class="fas fa-shopping-bag text-danger"></i><strong> Los modelos más vendidos de la temporada </strong><i class="fas fa-shopping-bag text-danger"></i></h2>
+        <h2 class="font-weight-light text-white text-center"><i class="fas fa-shopping-bag " style="color:#F1F109 "></i><strong style="color: #33FFF6"> Los modelos más vendidos de la temporada </strong><i class="fas fa-shopping-bag " style="color:#F1F109 "></i></h2>
 
-    <div class="owl-carousel owl-theme ">
-        @foreach($ListArticlesMasComprados as $art)
-            <div class="item">
-                <div class="card shadow m-2">
-                    <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
-                        @foreach($art->photos as $p)
-                            @if($loop->index==0)
-                                <img src="{{$p->url}}" class="card-img-top" height="270px">
-                                @break
-                            @endif
-                        @endforeach
+        <div class="owl-carousel owl-theme ">
+            @foreach($ListArticlesMasComprados as $art)
+                <div class="item">
+                    <div class="card shadow m-2">
+                        <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
+                            @foreach($art->photos as $p)
+                                @if($loop->index==0)
+                                    <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                    @break
+                                @endif
+                            @endforeach
                             <div class="card-body card-body-cascade text-center p-2">
-                                            <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
-                                            <!--Rating-->
+                                <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
+                                <!--Rating-->
 
-                                            <ul class="nav d-flex justify-content-center mb-1">
-                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                            </ul>
-                                            <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
+                                <ul class="nav d-flex justify-content-center mb-1">
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                </ul>
+                                <p class="card-text font-weight-lighter h4 text-dark"><strong>S/. {{$art->price}}</strong></p>
 
 
                             </div>
 
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        @endforeach
-    </div>
-    <h2 class="font-weight-light text-primary text-center"><i class="fas fa-shopping-bag text-danger"></i><strong> Nuevos modelos </strong><i class="fas fa-shopping-bag text-danger"></i></h2>
+            @endforeach
+        </div>
+        <h2 class="font-weight-light text-white text-center"><i class="fas fa-shopping-bag " style="color: #F1F109"></i><strong style="color:#33FFF6"> Nuevos modelos </strong><i class="fas fa-shopping-bag" style="color:#F1F109"></i></h2>
 
-    <div class="owl-carousel owl-theme">
-        @foreach($ListArticlesMasComprados as $art)
-            <div class="item">
-                <div class="card shadow m-2">
-                    <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
-                        @foreach($art->photos as $p)
-                            @if($loop->index==0)
-                                <img src="{{$p->url}}" class="card-img-top" height="270px">
-                                @break
-                            @endif
-                        @endforeach
-                        <div class="card-body card-body-cascade text-center p-2">
-                            <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
-                            <!--Rating-->
+        <div class="owl-carousel owl-theme">
+            @foreach($ListArticlesMasComprados as $art)
+                <div class="item">
+                    <div class="card shadow m-2">
+                        <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
+                            @foreach($art->photos as $p)
+                                @if($loop->index==0)
+                                    <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                    @break
+                                @endif
+                            @endforeach
+                            <div class="card-body card-body-cascade text-center p-2">
+                                <p class="card-text font-weight-lighter"><strong>{{$art->model}}</strong></p>
+                                <!--Rating-->
 
-                            <ul class="nav d-flex justify-content-center mb-1">
-                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                                <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
-                            </ul>
-                            <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
+                                <ul class="nav d-flex justify-content-center mb-1">
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
+                                </ul>
+                                <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
 
 
-                        </div>
+                            </div>
 
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
     </div>
-</div>
+
+
 @endsection
 @section('script')
-
     <script>
         $('.owl-carousel').owlCarousel({
             loop:true,

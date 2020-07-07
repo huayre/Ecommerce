@@ -81,4 +81,5 @@
             <i class="fas fa-chevron-right fa-2x controles "></i>
         </a>
     </div>
+    <div style="height:1px;background:#F1F109"></div>
 </div>

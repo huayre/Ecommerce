@@ -1,24 +1,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
 <style>
-    .navbar-dropdown a:hover { background:#1ABC9C ; }
+    .navbar-dropdown a:hover { background:#F1F109; }
 
     .navbar-nav li:hover {
-        background:#1ABC9C ;
+        background:#F1F109 ;
     }
     #textnacional{
         font-family: 'Damion', cursive;
         font-size: 38px;
-        color:#B71C1C;
+        color:#C10920 ;
     }
 </style>
 
-    <div class="d-none d-md-block " style="background:#f4fb39">
+    <div class="d-none d-md-block " style="background:#F1F109">
         <div class="container-fluid">
-            <div class="p-3 row">
+            <div class="p-2 row">
                 <div class="col">
                     <a href="{{route('inicio')}}">
-                        <img src="{{asset('images/empresa/logo_toxvic.png')}}" width="170px" class="ml-3">
+                        <img src="{{asset('images/empresa/logo_toxvic.png')}}" width="200px" class="ml-3">
                     </a>
                 </div>
                 <div class="col">
@@ -27,22 +27,20 @@
                 <div class="col d-flex justify-content-end">
                     <a href="https://www.facebook.com/toxvic/?modal=admin_todo_tour" target="_blank">
                     <span class="fa-stack" style="vertical-align: top;">
-                      <i class="fas fa-circle fa-stack-2x text-white"></i>
-                        <i class=" fab fa-facebook fa-stack-1x fa-inverse " style="color:#3b5998"></i>
+                      <i class="fas fa-circle fa-stack-2x" style="color: #000000"></i>
+                        <i class=" fab fa-facebook fa-stack-1x fa-inverse " style="color:#ffffff"></i>
                     </span>
                     </a>
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank">
                     <span class="fa-stack" style="vertical-align: top;">
-                      <i class="fas fa-circle fa-stack-2x text-white"></i>
-                        <i class="fab fa-instagram  fa-stack-1x fa-inverse " style="color:#B71C1C"></i>
+                      <i class="fas fa-circle fa-stack-2x" style="color: #000000"></i>
+                        <i class="fab fa-instagram  fa-stack-1x fa-inverse " style="color:#ffffff"></i>
                     </span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <nav class="navbar  sticky-top navbar-expand-lg navbar-light bg-light" style="background:#000000">
         <div class="container-xl">
@@ -79,8 +77,9 @@
                 </ul>
             </div>
         </div>
+
     </nav>
-    <div style="background:#f4fb39;height: 4px">
+    <div style="height:2px;background:#F1F109"></div>
 
     </div>
 
