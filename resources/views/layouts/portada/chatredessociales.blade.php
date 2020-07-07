@@ -9,11 +9,9 @@
 
 </style>
 <!--Whatssapp-->
- <a  class="appwhatsapp" href="https://api.whatsapp.com/send?phone=+51900888593&text=Hola!%20¿Me%20pueden%20apoyar?" target="_blank">
-     <span class="fa-stack fa-2x">
-      <i class="fas fa-circle fa-stack-2x" style="color:#00b44e"></i>
-      <i class="fab fa-whatsapp  fa-stack-1x fa-inverse" style="color:white"></i>
-    </span>
+ <a  href="https://api.whatsapp.com/send?phone=+51900888593&text=Hola!%20¿Me%20pueden%20apoyar?" target="_blank">
+     <img src="{{asset('images/empresa/whatsapp1.svg')}}" height="60" width="80" class="appwhatsapp">
+
  </a>
 <!--Messenger-->
 <!-- Load Facebook SDK for JavaScript -->
