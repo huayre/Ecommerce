@@ -42,7 +42,7 @@ ol.carousel-indicators li.active {
 }
 
 ol.carousel-indicators li {
-    background: rgba(255,255,255,0.39);
+    background:#8a8a8a;
     margin-left: .5rem;
     margin-right: .5rem;
 }

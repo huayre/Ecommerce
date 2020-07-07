@@ -11,11 +11,31 @@
     <title>TOXVIV | Login</title>
     <!--Bootstrap v4.5-->
     <link rel="stylesheet" href="{{asset('bootstrap4.5/css/bootstrap.min.css')}}" >
+   <style>
+       #particles-js{
+           background:#000000;
+           position: fixed;
+           height: 100vh;
+           width: 100%;
+           z-index: -1;
+       }
+       #contenidos{
+           position:relative;
+           z-index: 99;
+       }
+   </style>
 
 
 </head>
-<body>
-    <div id="app">
+<body >
+    <div id="particles-js"></div>
+        <div id="contenidos">
+            @yield('content')
+        </div>
+
+
+
+    {{--<div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -70,6 +90,14 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
+    </div>--}}
+    <script src="{{asset('packages/particlesjs/particles.min.js')}}"></script>
+    <script src="{{asset('packages/particlesjs/appparticles.js')}}"></script>
+    <script src="{{asset('packages/jquery-3.5.1/jquery-3.5.1.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="{{asset('bootstrap4.5/js/bootstrap.js')}}"></script>
+
+   @yield('script')
+
 </body>
 </html>

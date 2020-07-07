@@ -24,7 +24,7 @@
                     <div class="carousel-inner carousel_inner">
                             @foreach($ListArticles->photos as $p)
                                 <div class="carousel-item @if($loop->index==0) active @endif">
-                                    <img src="{{$p->url}}" class="w-100 imagen" alt="imagen_carousel" height="350px">
+                                    <img src="{{$p->url}}" class="w-100 imagen" alt="imagen_carousel" height="400px">
                                 </div>
                             @endforeach
                         </div>
@@ -46,7 +46,7 @@
                 <div class="linea_vertical mt-5"></div>
                 <div class="ml-3  p-4">
                     <h3 class=" d- text-primary text-uppercase d-none  d-md-block">{{$ListArticles->model}}</h3>
-                    <p class="lead">{{$ListArticles->description}}</p>
+                    <p class="">{{$ListArticles->description}}</p>
                     <hr>
                     <h5 class="">Tallas disponibles</h5>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">

@@ -18,7 +18,7 @@
             <div class="p-3 row">
                 <div class="col">
                     <a href="{{route('inicio')}}">
-                        <img src="{{asset('logov2.png')}}" width="150px" class="ml-3">
+                        <img src="{{asset('images/empresa/logo_toxvic.png')}}" width="170px" class="ml-3">
                     </a>
                 </div>
                 <div class="col">
