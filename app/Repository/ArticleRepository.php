@@ -13,7 +13,7 @@ class ArticleRepository
 {
     public function all()
     {
-        return Article::with('subcategorie')->get();
+        return Article::with('subcategorie','sizes')->orderBy('created_at','desc')->get();
     }
 
     public function create($data)
@@ -29,8 +29,14 @@ class ArticleRepository
 
     public function update($data, $id)
     {
-        $Category=Article::find($id);
-        $Category->Update($data);
+        $article=Article::find($id);
+        $article->Update($data->all());
+        $contador=0;
+        $article->sizes()->detach();
+        while ($contador<count($data->size)){
+            $article->sizes()->attach($data->size[$contador]);
+            $contador++;
+        }
     }
 
     public function delete($id)
@@ -53,7 +59,7 @@ class ArticleRepository
 
     public function GetArticulosMasVendidos(){
         $ListArticles=Article::with('photos')->get();
-        return $ListArticles->random(6);
+        return $ListArticles;
     }
     public function findArticle($id)
     {
@@ -65,6 +71,7 @@ class ArticleRepository
     public  function listArticleInteresSubcaptegories($subcategory_id){
         return Article::with('photos')->where('subcategory_id',$subcategory_id)->get();
     }
+
 
 
 }

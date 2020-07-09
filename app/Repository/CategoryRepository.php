@@ -12,7 +12,7 @@ class CategoryRepository implements BaseRepository
 
     public function all()
     {
-       return Category::withCount('subcategories')->get();
+       return Category::with('subcategories')->get();
     }
 
     public function create($data)
@@ -39,7 +39,7 @@ class CategoryRepository implements BaseRepository
     //metodos adicionales
     public  static function CategoriesActives(){
         return Category::with(['subcategories'=>function($query){
-            $query->where('state','1');
-        }])->where('state','1')->get();
+            $query->where('state','1')->select('name','id','category_id');
+        }])->where('state','1')->get(['name','id']);
     }
 }

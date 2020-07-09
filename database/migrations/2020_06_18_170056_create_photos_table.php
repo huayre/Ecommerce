@@ -17,7 +17,7 @@ class CreatePhotosTable extends Migration
             $table->id();
             $table->bigInteger('color_id')->unsigned();
             $table->string('url',1000);
-            $table->foreign('color_id')->references('id')->on('colors')->onDelete('cascade');
+            $table->foreign('color_id')->references('id')->on('colors')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

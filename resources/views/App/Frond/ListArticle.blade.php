@@ -1,4 +1,7 @@
 @extends('layouts.portada.index')
+@section('title')
+    TOXVIC | {{$NameTitle}}
+@endsection
 @section('styles')
     <link rel="stylesheet" href="{{asset('css/frontend/ListArticle.css')}}">
 @endsection

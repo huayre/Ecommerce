@@ -1,4 +1,5 @@
 @extends('layouts.admin.index')
+@section('title','Carousel')
 @section('contenido')
 
     @include('App.Admin.carrusel.create')
@@ -10,9 +11,9 @@
         <div class="row">
             @foreach($ListCarrusel as $car)
                 <div class="col-md-6 member_container">
-                      <button  data-toggle="modal"  data-target="#modal-delete-{{$car->id}}" class="btn btn-dark btn-sm mb-1"> <i class="fas fa-trash-alt "></i></button>
+                      <button  data-toggle="modal"  data-target="#modal-delete-{{$car->id}}" class="btn btn-danger btn-sm mb-1"> <i class="fas fa-trash-alt "></i></button>
                       @include('App.Admin.carrusel.delete')
-                     <small class="badge badge-warning">{{$loop->index+1}}</small>
+                     <small class="badge badge-info">{{$loop->index+1}}</small>
                     <div class="">
                         <img src="{{$car->url}}" class=" w-100  mb-4 img-rounded border border-dark" height="300">
                     </div>

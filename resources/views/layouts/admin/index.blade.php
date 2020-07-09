@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>  ToXVic</title>
-    <link rel="icon" href="{{secure_asset('logo.png')}}" type="image/icon type" class="img-circle">
+    <title>  ToXVic | @yield('title')</title>
+    <link rel="icon" href="{{asset('images/empresa/logo_navegador.png')}}" type="image/icon type">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- Font Awesome -->
@@ -165,9 +165,11 @@
                 <a class="nav-link text-light" data-toggle="dropdown" href="#">
                     <i class="fas fa-power-off"></i>
                 </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right text-center">
 
-                    <a href="{{route('logout')}}" class="dropdown-item dropdown-footer bg-warning">Cerrar Sesión</a>
+                    <a href="{{route('logout')}}" class="dropdown-item dropdown-footer">
+                        <h6>Cerrar Sesión</h6>
+                    </a>
                 </div>
             </li>
         </ul>
@@ -255,7 +257,8 @@
 
 <!-- Ekko Lightbox -->
 <script src="{{asset('template_admin/plugins/ekko-lightbox/ekko-lightbox.min.js')}}"></script>
-
+<script src="{{asset('packages/currencyjs/currency.min.js')}}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 @yield('script')
 </body>
 </html>

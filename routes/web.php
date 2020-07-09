@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Routes de autenticacion
-Auth::routes();
+Auth::routes(["register" => false]);
 Route::get('logout',function(){
     Auth::logout();
     return redirect('login');

@@ -1,4 +1,5 @@
 @extends('layouts.admin.index')
+@section('title','Categoría')
 @section('contenido')
 <h2 class="row justify-content-center text-primary text-center">LISTADO DE CATEGORÍAS</h2>
     <a href="{{route('category.create')}}" type="button" class="btn btn-primary mb-1 col-md-3"><i class="fas fa-plus-circle"></i> NUEVA CATEGORÍA</a>
@@ -30,7 +31,7 @@
                </td>
                <td class="table-warning">
                   <div class="d-flex justify-content-center">
-                      <small class="badge  badge-info">{{$cat->subcategories_count}}</small>
+                      <small class="badge  badge-info">{{$cat->subcategories->count()}}</small>
                   </div>
                </td>
 

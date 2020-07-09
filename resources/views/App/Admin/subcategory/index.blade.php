@@ -1,4 +1,5 @@
 @extends('layouts.admin.index')
+@section('title','Subcategoría')
 @section('contenido')
     <h2 class="row justify-content-center text-primary text-center">LISTADO DE SUBCATEGORÍAS</h2>
     <a href="{{route('subcategory.create')}}" type="button" class="btn btn-primary mb-2 col-md-3"><i class="fas fa-plus-circle"></i> NUEVA SUBCATEGORÍA</a>

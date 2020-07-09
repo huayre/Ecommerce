@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('images/icono.jpg')}}" type="image/icon type" class="img-circle">
-    <title>TOXVIC | Tienda Online</title>
+    <link rel="icon" href="{{asset('images/empresa/logo_navegador.png')}}" type="image/icon">
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('bootstrap4.5/css/bootstrap.min.css')}}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('template_admin/plugins/fontawesome-free/css/all.min.css')}}">

@@ -1,12 +1,11 @@
 @extends('layouts.admin.index')
 @section('contenido')
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <div id="div_create_article">
         <div class="card-header bg-dark ">
             <h3 class="text-primary">Nuevo Artículo</h3>
         </div>
         <div class="card-body  shadow-lg p-3 mb-5 bg-white rounded">
-            <form action="{{route('article.index')}}" method="post">
+            <form action="{{route('article.store')}}" method="post">
                 @csrf
                  <div class="row">
                      <div class="col-12 col-sm-6">
@@ -64,7 +63,7 @@
                         </div>
                      <div class="form-group">
                             <label>Descripción<span class="text-danger">(*)</span></label>
-                            <textarea class="form-control" name="description"></textarea>
+                            <textarea class="form-control" name="description" rows="5"></textarea>
                          @error('description')
                          <small class="text-danger">{{$message}}</small>
                          @enderror

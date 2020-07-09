@@ -36,7 +36,7 @@ class CarruselRepository implements BaseRepository
     }
 
     public static function ListaCarrusel(){
-        return Carrusel::all();
+        return Carrusel::all('url');
     }
 
 

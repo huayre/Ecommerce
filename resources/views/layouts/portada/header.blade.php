@@ -11,6 +11,8 @@
         font-size: 38px;
         color:#C10920 ;
     }
+
+
 </style>
 
     <div class="d-none d-md-block " style="background:#F1F109">
@@ -27,14 +29,14 @@
                 <div class="col d-flex justify-content-end">
                     <a href="https://www.facebook.com/toxvic/?modal=admin_todo_tour" target="_blank">
                     <span class="fa-stack" style="vertical-align: top;">
-                      <i class="fas fa-circle fa-stack-2x" style="color: #000000"></i>
-                        <i class=" fab fa-facebook fa-stack-1x fa-inverse " style="color:#ffffff"></i>
+                      <i class="fas fa-circle fa-stack-2x  iconos_redes_sociales"></i>
+                        <i class=" fab fa-facebook fa-stack-1x fa-inverse "></i>
                     </span>
                     </a>
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank">
                     <span class="fa-stack" style="vertical-align: top;">
-                      <i class="fas fa-circle fa-stack-2x" style="color: #000000"></i>
-                        <i class="fab fa-instagram  fa-stack-1x fa-inverse " style="color:#ffffff"></i>
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram  fa-stack-1x fa-inverse "></i>
                     </span>
                     </a>
                 </div>

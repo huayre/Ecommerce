@@ -18,8 +18,8 @@ class CreateArticleSizeTable extends Migration
             $table->bigInteger('size_id')->unsigned();
             $table->bigInteger('article_id')->unsigned();
             $table->timestamps();
-            $table->foreign('size_id')->references('id')->on('sizes');
-            $table->foreign('article_id')->references('id')->on('articles');
+            $table->foreign('size_id')->references('id')->on('sizes')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade')->onUpdate('cascade');
 
         });
     }

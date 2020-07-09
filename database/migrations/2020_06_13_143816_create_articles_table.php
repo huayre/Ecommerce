@@ -22,7 +22,7 @@ class CreateArticlesTable extends Migration
             $table->float('price');
             $table->string('brand');
 
-            $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
+            $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade')->onUpdate('cascade');
 
             $table->timestamps();
         });

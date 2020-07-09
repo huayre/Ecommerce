@@ -22,9 +22,9 @@
                     <div class="form-group">
                         <label>SubCategoria <span class="text-danger">(*)</span></label>
                         <select class="form-control" name="category_id" @error('category_id') is-invalid @enderror >
-                            <option selected="true" disabled="disabled">seleccione una categoría</option>
+                            <option selected="true" disabled>seleccione una categoría</option>
                             @foreach($ListCategory as $cat)
-                                <option  @if($cat->id== $SubCategory->category_id) selected='selected' @endif value="{{$cat->id}}">{{$cat->name}}</option>
+                                <option  @if($cat->id== $SubCategory->category_id) selected @endif value="{{$cat->id}}">{{$cat->name}}</option>
 
                             @endforeach
                         </select>

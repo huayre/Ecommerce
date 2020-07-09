@@ -1,4 +1,5 @@
 @extends('layouts.admin.index')
+@section('title','Artículo')
 @section('contenido')
     <h2 class="row justify-content-center text-primary text-center">LISTADO DE ARTÍCULOS</h2>
     <a href="{{route('article.create')}}" type="button" class="btn btn-primary mb-2 col-md-3"><i class="fas fa-plus-circle"></i> NUEVO ARTÍCULO</a>
@@ -49,12 +50,13 @@
                     </td>
                     <td>
                         <div  class="d-flex justify-content-center">
-                            <a href="{{route('colorindex',$art->id)}}" class="text-dark btn btn-default">
+                            <a href="{{route('article.edit',$art->id)}}" class="text-dark btn btn-default">
                                 <i class="fas fa-edit"></i></a>
 
                             <a href="#" data-toggle="modal" data-target="#modal-delete-{{$art->id}}" class="text-danger btn btn-default">
                                 <i class="fas fa-trash-alt"></i>
                             </a>
+                            @include('App.Admin.article.modal_delete')
                         </div>
 
                     </td>

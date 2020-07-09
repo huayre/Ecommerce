@@ -1,4 +1,5 @@
 @extends('layouts.admin.index')
+@section('title','Color')
 @section('contenido')
 
     <div>

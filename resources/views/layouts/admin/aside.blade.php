@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{route('home')}}" class="">
-        <img src="{{asset('logo.png')}}" alt="Logo Toxvic" class=" mx-auto d-block  mt-2 img-circle" width="150px">
+        <img src="{{asset('images/empresa/logo_admin.png')}}" alt="Logo Toxvic" class=" mx-auto d-block  mt-2 img-circle" width="150px">
 
     </a>
 
@@ -50,29 +50,6 @@
                         <i class="nav-icon fas fa-laptop-code"></i>
                         <p>
                             Sistema
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon text-primary"></i>
-                                <p>Usuario</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon text-primary"></i>
-                                <p>Empresa</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link bg-warning">
-                        <i class="nav-icon fas fa-users-cog"></i>
-                        <p>
-                            Configuración
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>

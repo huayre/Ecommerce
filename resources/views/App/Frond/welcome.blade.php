@@ -1,13 +1,14 @@
 @extends('layouts.portada.index')
+@section('title','TOXVIC')
 @section('styles')
     <link rel="stylesheet" href="{{asset('css/frontend/welcome.css')}}">
 @endsection
 @section('contenido')
 @include('layouts.portada.carrusel')
 
-    <div class="pt-5" style="background: #000000">
+    <div class="my-5" >
 
-        <h2 class="font-weight-light text-white text-center"><i class="fas fa-shopping-bag " style="color:#F1F109 "></i><strong style="color: #33FFF6"> Los modelos más vendidos de la temporada </strong><i class="fas fa-shopping-bag " style="color:#F1F109 "></i></h2>
+        <h2 class="font-weight-light text-center text-primary"><i class="fas fa-shopping-bag" style="color:#B28E28"></i><strong>  MODELOS MAS VENDIDOS DE LA TEMPORADA </strong><i class="fas fa-shopping-bag" style="color:#B28E28"></i></h2>
 
         <div class="owl-carousel owl-theme ">
             @foreach($ListArticlesMasComprados as $art)
@@ -16,7 +17,7 @@
                         <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
                             @foreach($art->photos as $p)
                                 @if($loop->index==0)
-                                    <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                    <img src="{{$p->url}}" class="card-img-top" height="250px">
                                     @break
                                 @endif
                             @endforeach
@@ -31,7 +32,7 @@
                                     <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
                                     <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
                                 </ul>
-                                <p class="card-text font-weight-lighter h4 text-dark"><strong>S/. {{$art->price}}</strong></p>
+                                <p class="card-text font-weight-lighter h4 " style="color:#000000"><strong>S/. {{$art->price}}</strong></p>
 
 
                             </div>
@@ -41,7 +42,7 @@
                 </div>
             @endforeach
         </div>
-        <h2 class="font-weight-light text-white text-center"><i class="fas fa-shopping-bag " style="color: #F1F109"></i><strong style="color:#33FFF6"> Nuevos modelos </strong><i class="fas fa-shopping-bag" style="color:#F1F109"></i></h2>
+        <h2 class="font-weight-light  text-center mt-5 text-primary"><i class="fas fa-shopping-bag " style="color:#B28E28"></i><strong> NUEVOS MODELOS  </strong><i class="fas fa-shopping-bag" style="color:#B28E28"></i></h2>
 
         <div class="owl-carousel owl-theme">
             @foreach($ListArticlesMasComprados as $art)
@@ -50,7 +51,7 @@
                         <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
                             @foreach($art->photos as $p)
                                 @if($loop->index==0)
-                                    <img src="{{$p->url}}" class="card-img-top" height="270px">
+                                    <img src="{{$p->url}}" class="card-img-top" height="250px">
                                     @break
                                 @endif
                             @endforeach
@@ -65,7 +66,7 @@
                                     <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
                                     <li class="nav-item"><i class="fas fa-star text-warning"></i></li>
                                 </ul>
-                                <p class="card-text font-weight-lighter h4"><strong>S/. {{$art->price}}</strong></p>
+                                <p class="card-text font-weight-lighter h4" style="color:#000000"><strong>S/. {{$art->price}}</strong></p>
 
 
                             </div>
@@ -83,7 +84,7 @@
     <script>
         $('.owl-carousel').owlCarousel({
             loop:true,
-            margin:7,
+            margin:0,
             nav:true,
             autoplay:true,
             autoplayTimeout:1500,

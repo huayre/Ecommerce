@@ -74,7 +74,10 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $Article=$this->ArticleRepository->find($id);
+        $ListaCategorias=$this->CategoryRepository->all();
+        $ListSizes=$this->ArticleRepository->allSizes();
+        return view('App.Admin.article.edit')->with(['Article'=>$Article,'ListaCategorias'=>$ListaCategorias,'ListSizes'=>$ListSizes]);
     }
 
     /**
@@ -84,9 +87,11 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(FormRequestArticle $request, $id)
     {
-        //
+        $this->ArticleRepository->update($request,$id);
+        toastr()->success('El producto fue actualizado correctamente!');
+        return redirect()->route('article.index');
     }
 
     /**
@@ -97,6 +102,8 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->ArticleRepository->delete($id);
+        toastr()->success('El producto fue eliminado correctamente!');
+        return redirect()->route('article.index');
     }
 }

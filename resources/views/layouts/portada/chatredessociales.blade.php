@@ -1,7 +1,7 @@
 <style>
     .appwhatsapp{
         position:fixed;
-        right: 35px;
+        right: 31px;
         bottom: 100px;
         width: 60px;
         z-index: 1000;
@@ -10,7 +10,7 @@
 </style>
 <!--Whatssapp-->
  <a  href="https://api.whatsapp.com/send?phone=+51900888593&text=Hola!%20¿Me%20pueden%20apoyar?" target="_blank">
-     <img src="{{asset('images/empresa/whatsapp1.svg')}}" height="60" width="80" class="appwhatsapp">
+     <img src="{{asset('images/empresa/whatsapp1.svg')}}" height="55" width="70" class="appwhatsapp">
 
  </a>
 <!--Messenger-->

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{asset('template_admin/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>TOXVIV | Login</title>
+    <link rel="icon" href="{{asset('images/empresa/logo_navegador.png')}}" type="image/icon">
+    <title>  ToXVic | @yield('title')</title>
     <!--Bootstrap v4.5-->
     <link rel="stylesheet" href="{{asset('bootstrap4.5/css/bootstrap.min.css')}}" >
    <style>

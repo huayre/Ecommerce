@@ -24,7 +24,7 @@
                     <div class="carousel-inner carousel_inner">
                             @foreach($ListArticles->photos as $p)
                                 <div class="carousel-item @if($loop->index==0) active @endif">
-                                    <img src="{{$p->url}}" class="w-100 imagen" alt="imagen_carousel" height="400px">
+                                    <img src="{{$p->url}}" class="w-100 imagen" alt="imagen_carousel" height="500px">
                                 </div>
                             @endforeach
                         </div>
@@ -165,11 +165,11 @@
                $.each(datos,function (index,value) {
                    if(index==0){
                        var carousel_indicators_indice='<li data-target="#carouselExampleIntervalDetalleArticle" data-slide-to="'+index+'" class="active"></li>'
-                       var carousel_item=' <div class="carousel-item active"><img src="'+value.url+'" class="w-100 imagen" alt="imagen_carousel" height="350px"></div>'
+                       var carousel_item=' <div class="carousel-item active"><img src="'+value.url+'" class="w-100 imagen" alt="imagen_carousel" height="500px"></div>'
                    }
                    else{
                        var carousel_indicators_indice='<li data-target="#carouselExampleIntervalDetalleArticle" data-slide-to="'+index+'"></li>'
-                       var carousel_item=' <div class="carousel-item"><img src="'+value.url+'" class="w-100 imagen" alt="imagen_carousel" height="350px"></div>'
+                       var carousel_item=' <div class="carousel-item"><img src="'+value.url+'" class="w-100 imagen" alt="imagen_carousel" height="500px"></div>'
                    }
                    $('.carousel_indicators').append(carousel_indicators_indice);
                    $('.carousel_inner').append(carousel_item);
