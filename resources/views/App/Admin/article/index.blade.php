@@ -24,7 +24,7 @@
             @foreach($ListArticle as $art)
                 <tr>
                     <td><small class="badge badge-primary badge-pill">{{$loop->index+1}}</small></td>
-                    <td>{{$art->model}}</td>
+                    <td class="table-responsive">{{$art->model}}</td>
                     <td>{{$art->subcategorie->name}}</td>
                     <td>{{$art->gender}}</td>
                     <td class="table-primary">

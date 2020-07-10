@@ -61,7 +61,7 @@
                             <li class="nav-item dropdown navbar-item has-dropdown is-hoverable text-uppercase font-weight-bold ">
                                 <a class="nav-link dropdown-toggle active " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                     {{$cat->name}}
-                                    <i class="fas fa-angle-down"></i>
+                                    <i class="fas fa-angle-down" style="color:#EB2713 "></i>
                                 </a>
                                 <div class="dropdown-menu navbar-dropdown" aria-labelledby="navbarDropdown">
                                     @foreach($cat->subcategories as $sub)
@@ -71,7 +71,7 @@
                             </li>
                         @else
                             <li class="nav-item text-uppercase font-weight-bold active">
-                                <a class="nav-link" href="#">{{$cat->name}}</a>
+                                <a class="nav-link" href="">{{$cat->name}}</a>
                             </li>
                         @endif
 

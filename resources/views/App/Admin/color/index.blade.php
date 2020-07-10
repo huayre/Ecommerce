@@ -4,6 +4,7 @@
 
     <div>
         @include('App.Admin.color.modal_create_color')
+        <a href="{{route('article.index')}}" class="btn btn-default"><i class="fas fa-reply-all"></i></a>
         <a href="#" data-toggle="modal" data-target="#modal-create-color" class="btn btn-primary" id="btn_add_color">
             <i class="fas fa-plus-circle"></i> NUEVO COLOR
         </a>

@@ -52,7 +52,7 @@ class ArticleRepository
     //metodos adicionales
     public function getListArticleSubcategorie($id){
 
-        $ListArticles=Article::with('photos')->where('subcategory_id',$id)->paginate(20);
+        $ListArticles=Article::with('photos')->where('subcategory_id',$id)->paginate(12);
 
         return $ListArticles;
     }

@@ -1,7 +1,7 @@
 @extends('layouts.portada.index')
 @section('title','TOXVIC')
 @section('styles')
-    <link rel="stylesheet" href="{{asset('css/frontend/welcome.css')}}">
+    <link rel="stylesheet" href="{{asset('css/frontend/welcome.css')}}">3d-corner-ribbons
 @endsection
 @section('contenido')
 @include('layouts.portada.carrusel')
@@ -17,7 +17,14 @@
                         <a href="{{route('detalleproducto',$art->id)}}" style="text-decoration: none">
                             @foreach($art->photos as $p)
                                 @if($loop->index==0)
+
                                     <img src="{{$p->url}}" class="card-img-top" height="250px">
+
+                                    <div class="ribbon ribbon-gree">
+                                        <div class="banner">
+                                            <div class="text text-center">Nuevo</div>
+                                        </div>
+                                    </div>
                                     @break
                                 @endif
                             @endforeach
@@ -52,6 +59,11 @@
                             @foreach($art->photos as $p)
                                 @if($loop->index==0)
                                     <img src="{{$p->url}}" class="card-img-top" height="250px">
+                                    <div class="ribbon ribbon-gree">
+                                        <div class="banner">
+                                            <div class="text text-center">Nuevo</div>
+                                        </div>
+                                    </div>
                                     @break
                                 @endif
                             @endforeach

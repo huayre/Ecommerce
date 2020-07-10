@@ -20,7 +20,6 @@
         margin-top: 0;
     }
 
-
 </style>
 
 <body>
@@ -33,13 +32,12 @@
 
         <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<link rel="stylesheet" href="{{asset('css/frontend/3d-corner-ribbons.css')}}">
 <script src="{{asset('packages/jquery-3.5.1/jquery-3.5.1.min.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="{{asset('bootstrap4.5/js/bootstrap.js')}}"></script>
 <script src="{{asset('packages/owl_carousel/owl.carousel.js')}}"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script src="{{asset('packages/particlesjs/particles.min.js')}}"></script>
-<script src="{{asset('packages/particlesjs/appparticles.js')}}"></script>
 
 @yield('script')
 </body>

@@ -1,11 +1,6 @@
-<footer>
+<footer class="bg-dark">
     <div class="bg-warning d-flex justify-content-center p-5">
-        <form class="form">
-            <div class="form-inline">
-                <label for="staticEmail2" class="mr-2">SUSCRÍBETE, ENTÉRATE DE LAS NOVEDADES</label>
-                <input type="email" class="form-control" placeholder="email@example.com">
-            </div>
-        </form>
+        <h3>TOXVIC TE HACE LA VIDA MAS FACIL</h3>
     </div>
     <div class="container-fluid">
         <div class="row">

@@ -45,6 +45,7 @@ class ColorController extends Controller
     {
         $this->ColorRepository->create($request->only('name','article_id'));
         $article_id=$request->article_id;
+        toastr()->success('EL color fue creado correctamente!');
         return redirect()->route('colorindex',$article_id);
     }
 
